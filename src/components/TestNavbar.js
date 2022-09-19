@@ -1,31 +1,35 @@
 import React from "react";
-import "../components/TestNavbar.css";
+ import "../components/TestNavbar.css";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import {BsGlobe2} from "react-icons/bs"
+// import "../components/VideoStyles.css"
+
+
+import { BsGlobe2 } from "react-icons/bs";
+import Video from "./Video";
 
 const TestNavbar = () => {
   return (
     <div className="navbartest1">
+      
       <Navbar
         className="navbartest2"
         collapseOnSelect
         expand="lg"
-        bg="dark"
-        variant="dark"
+        // bg="dark"
+        // variant="dark"
       >
         <Container>
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+          
+          <Navbar.Brand className="title1" href="#home">gamercv</Navbar.Brand>
+          
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="#homepage">Anasayfa</Nav.Link>
-              
 
               <NavDropdown title="Bugg Hakkında?" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">
@@ -50,7 +54,7 @@ const TestNavbar = () => {
               <Nav.Link href="#blog">Blog</Nav.Link>
               <NavDropdown title="Destek?" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">
-                <BsGlobe2/>
+                  <BsGlobe2 />
                   Bize Ulaşın
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
@@ -59,29 +63,27 @@ const TestNavbar = () => {
             </Nav>
             <Nav>
               <Nav.Link href="#deets">More deets</Nav.Link>
-              
-              <NavDropdown title="EN/TR"  id="collasible-nav-dropdown">
-                
+
+              <NavDropdown title="EN/TR" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.4">
-                    Türkçe 
-                <span class="fi fi-tr"></span>
-                
-               
+                  Türkçe
+                  <span class="fi fi-tr"></span>
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.5">
-                    English
-                    <span class="fi fi-us"></span>
+                  English
+                  <span class="fi fi-us"></span>
                 </NavDropdown.Item>
               </NavDropdown>
               {/* </BsGlobe2>
                 <BsGlobe2 style={{fontSize:"50px"}}> */}
-              
-
             </Nav>
           </Navbar.Collapse>
         </Container>
+        
       </Navbar>
+      
+      <Video/>
     </div>
   );
 };

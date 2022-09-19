@@ -1,12 +1,45 @@
 /* .navbartest1 .Nav{
     background-color: red !important; 
 } */
-
-
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
 
 .navbartest1 .navbartest2{
-    background-color: red !important;
+    /* background: rgba(0, 0, 0, 0.2) !important; */
+    background: transparent !important;
+
+    position: fixed !important;
+        /* background: rgba(209, 205, 205, 0.9) !important; */
+
+        /* background:linear-gradient(45deg, rgba(4, 4, 255, 0.25) 20%,#00005f 15%,#a10149 12%,#670052 11%) ; */
+        /* opacity: 0.30; */
 }
 .navbartest1 .nav-link{
     margin-right: 50px !important ;
+    
 }
+.title1 {
+    font-family :  'Fredoka One', cursive !important;
+    
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: fixed;
+  }
+  
+
+.content {
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    top: 40vh;
+  font-family: 'Rubik Moonrocks', cursive !important;
+  color: white;
+}    
+
