@@ -1,0 +1,12 @@
+/* .navbartest1 .Nav{
+    background-color: red !important; 
+} */
+
+
+
+.navbartest1 .navbartest2{
+    background-color: red !important;
+}
+.navbartest1 .nav-link{
+    margin-right: 50px !important ;
+}
