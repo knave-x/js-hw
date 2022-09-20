@@ -2,6 +2,8 @@ import React from "react";
 // import "./VideoStyles.css";
 import gameVideo from "../assest/gamevideo2.mp4";
 import TestNavbar from "./TestNavbar";
+// import "./TestNavbar.css";
+
 
 const Video = () => {
   return (
@@ -11,6 +13,7 @@ const Video = () => {
       </video>
       <div className="content" >
             <h1>gamercv</h1>
+            <h6>Alpha</h6>
             
         </div>
     </div>

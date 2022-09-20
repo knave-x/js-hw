@@ -5,10 +5,12 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import Button from "react-bootstrap/Button";
 // import "../components/VideoStyles.css"
 
 
 import { BsGlobe2 } from "react-icons/bs";
+import {GrGamepad} from "react-icons/gr"
 import Video from "./Video";
 
 const TestNavbar = () => {
@@ -24,7 +26,7 @@ const TestNavbar = () => {
       >
         <Container>
           
-          <Navbar.Brand className="title1" href="#home">gamercv</Navbar.Brand>
+          <Navbar.Brand className="title1" href="#home"> <GrGamepad className="icontitle"/>gamercv</Navbar.Brand>
           
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -62,7 +64,7 @@ const TestNavbar = () => {
               </NavDropdown>
             </Nav>
             <Nav>
-              <Nav.Link href="#deets">More deets</Nav.Link>
+            <Button   className="newButton" variant="outline-info"> <GrGamepad  className="gamericon" /> Giriş Yap</Button>
 
               <NavDropdown title="EN/TR" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.4">
