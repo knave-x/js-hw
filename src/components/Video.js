@@ -1,7 +1,7 @@
 import React from "react";
 // import "./VideoStyles.css";
-import gameVideo from "../assest/gamevideo2.mp4";
-import TestNavbar from "./TestNavbar";
+import gameVideo from "../assets/gamevideo2.mp4";
+
 // import "./TestNavbar.css";
 
 

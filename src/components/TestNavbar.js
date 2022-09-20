@@ -15,6 +15,7 @@ import {FiNavigation,FiSettings} from "react-icons/fi"
 import {SiGrunt}from "react-icons/si"
 import {MdContactMail}from "react-icons/md"
 import {BiCopyright} from "react-icons/bi"
+import {AiOutlineGlobal} from "react-icons/ai"
 import Video from "./Video";
 
 const TestNavbar = () => {
@@ -75,16 +76,16 @@ const TestNavbar = () => {
             </Nav>
             <Nav>
             <Button   className="newButton" variant="outline-info"> <GrGamepad  className="gamericon" /> Giriş Yap</Button>
-
-              <NavDropdown title="EN/TR" id="collasible-nav-dropdown">
+              
+              <NavDropdown title={<AiOutlineGlobal className="AiOutlineGlobal"/>} id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.4">
                   Türkçe
-                  <span class="fi fi-tr"></span>
+                  <span className="fi fi-tr"></span>
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.5">
                   English
-                  <span class="fi fi-us"></span>
+                  <span className="fi fi-us"></span>
                 </NavDropdown.Item>
               </NavDropdown>
               {/* </BsGlobe2>
