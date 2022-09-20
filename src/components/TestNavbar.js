@@ -9,8 +9,12 @@ import Button from "react-bootstrap/Button";
 // import "../components/VideoStyles.css"
 
 
-import { BsGlobe2 } from "react-icons/bs";
+import { BsFillPeopleFill} from "react-icons/bs";
 import {GrGamepad} from "react-icons/gr"
+import {FiNavigation,FiSettings} from "react-icons/fi"
+import {SiGrunt}from "react-icons/si"
+import {MdContactMail}from "react-icons/md"
+import {BiCopyright} from "react-icons/bi"
 import Video from "./Video";
 
 const TestNavbar = () => {
@@ -35,18 +39,22 @@ const TestNavbar = () => {
 
               <NavDropdown title="Bugg Hakkında?" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">
+                  <SiGrunt className="SiGrunt"/>
                   Bugg Kimdir?
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.2">
+                  <FiSettings className="FiSettings"/>
                   Nasıl Çalışır
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.3">
+                  <BsFillPeopleFill className="BsFillPeopleFill"/>
                   Bugg Partnerlik Başvurusu
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">
+                <FiNavigation className="navigationIcon"/>
                   Yol Haritası
                 </NavDropdown.Item>
               </NavDropdown>
@@ -56,11 +64,13 @@ const TestNavbar = () => {
               <Nav.Link href="#blog">Blog</Nav.Link>
               <NavDropdown title="Destek?" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">
-                  <BsGlobe2 />
+                  <MdContactMail className="MdContactMail" />
                   Bize Ulaşın
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.2">S.S.S.</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">
+                  <BiCopyright className="BiCopyright"/>
+                  S.S.S.</NavDropdown.Item> 
               </NavDropdown>
             </Nav>
             <Nav>

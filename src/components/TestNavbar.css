@@ -17,10 +17,13 @@
   /* opacity: 1; */
    margin-left: 150px !important; 
   display: flex !important;
+  background: rgba(255,255,255,0.2) !important;
 }
 .navbartest1 .nav-link {
   margin-right: 30px !important ;
   font-family: 'Righteous', cursive;
+  /* background-color:red; */
+  
 }
 .title1 {
   font-family: "Fredoka One", cursive !important;
@@ -59,7 +62,7 @@ h1 {
   border-radius: 25px;
   letter-spacing: 4px;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 44px;
   overflow: hidden;
   transition: 0.2s;
 }
@@ -94,6 +97,52 @@ h1:hover {
 }
 .icontitle{
     margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.navigationIcon {
+    color: green;
+    margin-right: 7px;
+    width: 20px;
+    height: 20px;
+}
+.BsFillPeopleFill{
+    color: purple;
+    margin-right: 7px;
+    width: 20px;
+    height: 20px;
+
+}
+.FiSettings{
+    color: orangered;
+    margin-right: 7px;
+    width: 20px;
+    height: 20px;
+}
+.SiGrunt{
+    color: blueviolet;
+    margin-right: 7px;
+    width: 20px;
+    height: 20px;
+}
+.MdContactMail {
+    color: mediumaquamarine;
+    margin-right: 7px;
+    width: 20px;
+    height: 20px;
+}
+.BiCopyright{
+    color: darkgrey;
+    margin-right: 7px;
+    width: 20px;
+    height: 20px;
+}
+.fi{
+    
+   display: flex;
+   flex-direction: row;
+   
     width: 25px;
     height: 25px;
 }
